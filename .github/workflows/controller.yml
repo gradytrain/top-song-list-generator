@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: ls ${{ github.workspace }}
       - name: Run quality
         id: quality
         uses: ./.github/workflows/quality.yml
