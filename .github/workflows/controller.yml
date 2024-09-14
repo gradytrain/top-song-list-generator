@@ -1,0 +1,22 @@
+# Copyright 2024, Josh Grady, All rights reserved. 
+
+name: Top Tracks Pipeline Controller
+
+on: [pull_request , push ]
+   
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run quality
+        id: quality
+        uses: ./.github/workflows/quality.yml
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Test
+        id: test
+        uses: ./.github/workflows/test.yml

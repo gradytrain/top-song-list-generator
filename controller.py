@@ -1,5 +1,7 @@
 #!"C:\users\gr80t\.pyenv\pyenv-win\versions\3.11.0"
 
+# Copyright 2024, Josh Grady, All rights reserved. 
+
 import argparse
 import requests
 from datetime import datetime

@@ -1,0 +1,13 @@
+# Copyright 2024, Josh Grady, All rights reserved. 
+
+name: Run Test and Validation Workflow
+
+on:
+    workflow_call:
+    workflow_dispatch:
+
+jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
